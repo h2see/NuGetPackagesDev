@@ -97,11 +97,14 @@
       <EnableUAC>false</EnableUAC>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
-</Command>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Debug\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Debug\net9.0\"
+
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Release\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Release\net9.0\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Copy dll to MultiDimArray project</Message>
+      <Message>Copying MultiDimArrayNative.dll to output folders ...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,11 +126,14 @@
       <EnableUAC>false</EnableUAC>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
-</Command>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Debug\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Debug\net9.0\"
+
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Release\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Release\net9.0\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Copy dll to MultiDimArray project</Message>
+      <Message>Copying MultiDimArrayNative.dll to output folders ...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -145,11 +151,14 @@
       <EnableUAC>false</EnableUAC>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
-</Command>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Debug\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Debug\net9.0\"
+
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Release\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Release\net9.0\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Copy dll to MultiDimArray project</Message>
+      <Message>Copying MultiDimArrayNative.dll to output folders ...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -171,11 +180,14 @@
       <EnableUAC>false</EnableUAC>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
-</Command>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Debug\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Debug\net9.0\"
+
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\Release\net9.0\"
+xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayTests\bin\Release\net9.0\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Copy dll to MultiDimArray project</Message>
+      <Message>Copying MultiDimArrayNative.dll to output folders ...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
