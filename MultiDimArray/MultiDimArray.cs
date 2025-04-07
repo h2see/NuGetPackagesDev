@@ -310,4 +310,17 @@ namespace MultiDimArray
 
         #endregion
     }
+
+
+    internal static class NativeMethods
+    {
+        [DllImport("MultiDimArrayNative.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern unsafe void Add(
+            double* a,
+            double* b,
+            double* result,
+            UIntPtr n);
+    }
+
+
 }

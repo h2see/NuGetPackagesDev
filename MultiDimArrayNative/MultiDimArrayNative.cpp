@@ -31,6 +31,6 @@ MULTIDIMARRAYNATIVE_API void Add(
 )
 {
     for (size_t i = 0; i < n; i++) {
-        result[i] = a[i] * b[i];
+        result[i] = a[i] + b[i];
     }
 }

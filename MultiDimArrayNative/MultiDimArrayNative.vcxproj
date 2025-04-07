@@ -96,6 +96,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy dll to MultiDimArray project</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -115,6 +122,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy dll to MultiDimArray project</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -130,6 +144,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy dll to MultiDimArray project</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -149,6 +170,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)MultiDimArrayNative\bin\$(Configuration)\"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy dll to MultiDimArray project</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
