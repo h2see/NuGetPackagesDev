@@ -1,0 +1,2 @@
+#define MULTIDIMARRAYNATIVE_API __declspec(dllexport)
+#define MULTIDIMARRAYNATIVE_API __declspec(dllimport)
