@@ -309,6 +309,38 @@ namespace MultiDimArray
         }
 
         #endregion
+
+        #region Operators
+        public static MultiDimArray<T> operator +(
+        MultiDimArray<T> lhs,
+        MultiDimArray<T> rhs)
+        {
+            if (lhs is null)
+                throw new ArgumentNullException(nameof(lhs));
+            if (rhs is null)
+                throw new ArgumentNullException(nameof(rhs));
+
+            if (lhs.NumDims != rhs.NumDims)
+                throw new ArgumentException("Arrays must have the same number of dimensions.");
+            for (int i = 0; i < lhs.NumDims; i++)
+            {
+                if (lhs.GetLength(i) != rhs.GetLength(i))
+                    throw new ArgumentException("Arrays must have the same shape in each dimension.");
+            }
+
+            if (typeof(T) != typeof(double))
+                throw new NotImplementedException("Addition is not implemented for a MultiDimArray with this element type.");
+
+            MultiDimArray<T> result = new MultiDimArray<T>(lhs.Shape.ToArray());
+
+            unsafe
+            {
+                NativeMethods.Add((double*)lhs.Data, (double*)rhs.Data, (double*)result.Data, (UIntPtr)lhs.Length);
+            }
+
+            return result;
+        }
+        #endregion
     }
 
 
