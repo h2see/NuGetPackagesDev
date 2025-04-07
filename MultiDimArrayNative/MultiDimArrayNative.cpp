@@ -20,3 +20,17 @@ CMultiDimArrayNative::CMultiDimArrayNative()
 {
     return;
 }
+
+// ===============================================================================================
+
+MULTIDIMARRAYNATIVE_API void Add(
+    const double* a,
+    const double* b,
+    double* result,
+    size_t n
+)
+{
+    for (size_t i = 0; i < n; i++) {
+        result[i] = a[i] * b[i];
+    }
+}

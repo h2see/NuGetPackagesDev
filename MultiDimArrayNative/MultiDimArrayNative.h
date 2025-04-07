@@ -20,3 +20,13 @@ public:
 extern MULTIDIMARRAYNATIVE_API int nMultiDimArrayNative;
 
 MULTIDIMARRAYNATIVE_API int fnMultiDimArrayNative(void);
+
+// ===============================================================================================
+
+MULTIDIMARRAYNATIVE_API void Add
+(
+    const double* a,
+    const double* b,
+    double* result,
+    size_t n
+);
